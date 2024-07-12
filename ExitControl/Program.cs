@@ -8,18 +8,18 @@ namespace ExitControl
         {
             string exitWord = "exit"; 
             string userinput;
-            bool isNotExit = true;
+            bool isWork = true;
 
-            while (isNotExit)
+            while (isWork)
             {
                 Console.WriteLine("Hello World");
                 Console.WriteLine("Для того чтобы выйти из приложения введите слово <exit>");
 
-                exitWord = Console.ReadLine();
+                userInput = Console.ReadLine();
 
                 if (userinput == exitWord)
                 {
-                    isNotExit = false;
+                    isWork = false;
                 }
             }
         }
