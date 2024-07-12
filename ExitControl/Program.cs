@@ -6,7 +6,8 @@ namespace ExitControl
     {
         static void Main(string[] args)
         {
-            string exitWord; 
+            string exitWord = "exit"; 
+            string userinput;
             bool isNotExit = true;
 
             while (isNotExit)
@@ -16,7 +17,7 @@ namespace ExitControl
 
                 exitWord = Console.ReadLine();
 
-                if (exitWord == "exit")
+                if (userinput == exitWord)
                 {
                     isNotExit = false;
                 }
